@@ -1,0 +1,12 @@
+.about__paragraph {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  color: var(--body-text);
+  margin-bottom: 1rem;
+}
+
+.about__container img {
+  margin-top: 2rem;
+}
