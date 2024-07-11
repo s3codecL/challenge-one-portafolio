@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 80px;
+  padding: 0 30px;
+}
+
+
+.menu__list {
+  display: none;
+}
+
+
+.menu__list .menu__list__item {
+  transition: all 0.5s ease-in-out;
+
+}
+
+
+@media (min-width: 992px) {
+  header {
+    padding: 0;
+  }
+	.menu__list {
+    display: flex;
+    flex-direction: row;
+    font-size: 1rem;
+    gap: 30px;
+  }
+  .menu__list .menu__list__item:hover {
+    transform: scale(1.1);
+    font-weight: 500;
+	}
+
+  .menu__list__item__contato {
+    display: none;
+  }
+
+}
+
+
+
+

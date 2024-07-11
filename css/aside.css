@@ -1,0 +1,255 @@
+:root {
+	--color-bg-gray: #f3f6f6;
+}
+
+.informacion__personal {
+	width: 100%;
+	border-radius: 20px;
+	background-color: #fff;
+	text-align: center;
+	padding: 40px 30px;
+}
+
+
+.informacion__personal__area__img {
+	width: 240px;
+	height: 240px;
+	border-radius: 20px;
+	overflow: hidden;
+	margin: auto;
+	margin-bottom: 21px;
+}
+
+.informacion__personal__area__img img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.informacion__personal_nombre {
+	font-size: 2rem;
+	text-transform: capitalize;
+	font-weight: 500;
+	color: #000;
+	margin-bottom: 8px;
+}
+
+.bostami-parsonal-info-bio {
+	font-size: 14px;
+	display: inline-block;
+	font-weight: 500;
+	text-transform: capitalize;
+	color: #000;
+	background-color: #f3f6f6;
+	border-radius: 5px;
+	padding: 4px 20px;
+}
+
+.bostami-parsonal-info-social-link {
+	margin-top: 1rem;
+	display: flex;
+	justify-content: center;
+	gap: 8px;
+}
+
+[class^="bi-"]::before,
+[class*=" bi-"]::before {
+	line-height: inherit !important;
+}
+
+.bostami-parsonal-info-social-link li a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 8px;
+	background-color: #f3f6f6;
+	text-align: center;
+	line-height: 40px;
+	font-size: 18px;
+}
+
+
+.discord:hover {
+	background: #6c18ff;
+	color: #fff;
+}
+
+.youtube:hover {
+	background: #ff0000;
+	color: #fff;
+}
+
+.github:hover {
+	background: #000;
+	color: #fff;
+}
+
+.linkedin:hover {
+	background: #144679;
+	color: #fff;
+}
+
+
+.informacion__personal__contacto {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	background: var(--color-bg-gray);
+	text-align: start;
+	border-radius: 20px;
+	padding: 20px 30px;
+}
+
+.informacion__personal__contacto .item_icono__texto {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+
+.informacion__personal__contacto .item_icono__texto:not(:first-child) {
+	border-top: 1px solid #e3e3e3;
+}
+
+.item_icono__texto .icono {
+	flex: 0 0 auto;
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	background-color: #fff;
+	border-radius: 8px;
+	text-align: center;
+	line-height: 44px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+	transition: 0.3s;
+}
+
+.item_icono__texto .icono i {
+	font-size: 1.3rem;
+	font-weight: 900;
+}
+
+.icono .bi::before {
+	font-weight: 800 !important;
+}
+
+
+.item_icono__texto .location i {
+	color: #4793AF;
+}
+
+.item_icono__texto .mail i {
+	color: #ffc470;
+}
+
+.item_icono__texto .phone i {
+	color: #DD5746;
+}
+
+.item_icono__texto .texto {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.titulo_lista {
+	display: block;
+	font-size: .9rem;
+	line-height: 18px;
+	text-transform: capitalize;
+	font-weight: 400;
+}
+
+.subtitulo_lista {
+	font-size: 1.1rem;
+	line-height: 24px;
+	font-weight: 500;
+	margin-bottom: 0;
+	word-break: break-word;
+}
+
+
+
+.btn__descargar__cv {
+	--width: 240px;
+	--height: 48px;
+	--button-color: #1163ff;
+	--tooltip-color: #fff;
+	width: var(--width);
+	height: var(--height);
+	background: var(--button-color);
+	position: relative;
+	text-align: center;
+	border-radius: 16px;
+	transition: background 0.3s;
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+
+
+
+
+.btn__texto {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+	font-weight: 500;
+	letter-spacing: 1.1px;
+}
+
+.button-wrapper,
+.btn__texto,
+.btn__icono {
+	overflow: hidden;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	color: #fff;
+}
+
+.btn__texto {
+	top: 0
+}
+
+.btn__texto,
+.btn__icono {
+	transition: top 1s;
+}
+
+.btn__icono {
+	color: #fff;
+	top: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn__icono svg {
+	width: 24px;
+	height: 24px;
+}
+
+.btn__descargar__cv:hover {
+	background: #6c18ff;
+}
+
+.btn__descargar__cv:hover .btn__texto {
+	top: -100%;
+}
+
+.btn__descargar__cv:hover .btn__icono {
+	top: 0;
+}
+
+
+@media (min-width: 1024px) {
+	.informacion__personal__area__img {
+		margin-top: -120px;
+	}
+}
