@@ -27,6 +27,30 @@ body {
 	overflow-y: auto;
 }
 
+/* Boton claro-oscuro */
+body.dark-mode {
+	background-color: #333;
+	color: #f0f0f0;
+}
+
+.container__principal.dark-mode {
+	background-color: #444;
+}
+
+.dark-mode-button {
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	padding: 10px;
+	background-color: #f0f0f0;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+
+
+
 
 .bg-color-2 {
 	background-color: #CDF0EA;
